@@ -1,3 +1,9 @@
+import BloccoNote from "../layout/BloccoNote";
+
 export default function MainContent() {
-  return <div>MainContent</div>;
+  return (
+    <>
+      <BloccoNote />
+    </>
+  );
 }
