@@ -36,26 +36,29 @@ export default function BloccoNote() {
     <>
       <div className="container mb-3  ">
         <div className="">
-          <label
-            htmlFor="nota"
-            className="fw-bold mb-3 fs-5">
+          <div className="d-flex ">
+            <label
+              htmlFor="nota"
+              className="fw-bold mb-3 fs-5">
+              {" "}
+              Blocco Note
+            </label>
+            <textarea
+              value={text}
+              className="form-control w-75"
+              name="nota"
+              rows="3"
+              onChange={(e) => setText(e.target.value)}></textarea>
+            <p className="text-end w-75">Text lenght: {text.trim().length}</p>
+          </div>
+
+          <button
+            className="btn btn-secondary"
+            onClick={handleReset}>
             {" "}
-            Blocco Note
-          </label>
-          <textarea
-            value={text}
-            className="form-control w-75"
-            name="nota"
-            rows="3"
-            onChange={(e) => setText(e.target.value)}></textarea>
-          <p className="text-end w-75">Text lenght: {text.trim().length}</p>
+            <Ban />
+          </button>
         </div>
-        <button
-          className="btn btn-secondary"
-          onClick={handleReset}>
-          {" "}
-          <Ban />
-        </button>
       </div>
     </>
   );

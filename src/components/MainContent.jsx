@@ -1,9 +1,11 @@
-import BloccoNote from "../layout/BloccoNote";
+// import BloccoNote from "../layout/BloccoNote";
+import LightDark from "../layout/LightDark";
 
 export default function MainContent() {
   return (
     <>
-      <BloccoNote />
+      {/* <BloccoNote /> */}
+      <LightDark />
     </>
   );
 }
