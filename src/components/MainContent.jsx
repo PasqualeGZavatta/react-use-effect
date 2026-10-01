@@ -1,11 +1,14 @@
 // import BloccoNote from "../layout/BloccoNote";
-import LightDark from "../layout/LightDark";
+
+import WindowSizeTracker from "../layout/WindowSizeTracker";
 
 export default function MainContent() {
   return (
     <>
-      {/* <BloccoNote /> */}
-      <LightDark />
+      <main>
+        {/* <BloccoNote /> */}
+        <WindowSizeTracker />
+      </main>
     </>
   );
 }
